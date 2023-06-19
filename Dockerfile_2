@@ -1,0 +1,5 @@
+FROM nginx
+RUN  apt install git -y
+RUN mkdir /app
+WORKDIR  /app
+COPY . /var/www/html/
